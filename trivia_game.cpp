@@ -3,7 +3,7 @@
 using namespace std;
 
 int main() {
-  // Write code here
+  
   srand(time(NULL));
   string ans;
   int score=0;
@@ -16,8 +16,9 @@ int main() {
     cout<<"2) Nile\n";
     cout<<"3) Amazon River\n";
     cout<<"4) Yangtze River\n";
+    cout << "Enter your answer (1-4): ";
     cin>>ans;
-    if(ans=="1"){
+    if(ans=="2"){
       cout<<"CORRECT\n";
       score++;
     }
@@ -31,6 +32,7 @@ int main() {
     cout<<"2) 150\n";
     cout<<"3) 206\n";
     cout<<"4) 10\n";
+    cout << "Enter your answer (1-4): ";
     cin>>ans;
     if(ans=="3"){
       cout<<"CORRECT\n";
@@ -51,11 +53,48 @@ int main() {
     else{
       cout<<"INCORRECT\n";
     }
+    
+    cout << "\nQ4) What planet is known as the Red Planet? 🔴\n";
+    cout << "1) Earth\n";
+    cout << "2) Venus\n";
+    cout << "3) Mars\n";
+    cout << "4) Jupiter\n";
+    cout << "Enter your answer (1-4): ";
+    cin >> ans;
+    if (ans == "3") {
+        cout << "CORRECT\n";
+        score++;
+    } else {
+        cout << "INCORRECT\n";
+    }
+
+  
+    cout << "Q5) Which famous scientist developed the theory of relativity? 🧠\n";
+    cout << "1) Isaac Newton\n";
+    cout << "2) Albert Einstein\n";
+    cout << "3) Galileo Galilei\n";
+    cout << "4) Stephen Hawking\n";
+    cout << "Enter your answer (1-4): ";
+    cin >> ans;
+    if (ans == "2") {
+        cout << "CORRECT\n";
+        score++;
+    } else {
+        cout << "INCORRECT\n";
+    }
 
   cout<<"YOUR FINAL SCORE IS "<<score<<endl;
-
-  if (score == 3) cout << "Excellent!";
-else if (score == 2) cout << "Good try!";
-else cout << "Better luck next time!";
+  
+  if (score >= 4) {
+      cout << "Excellent!";
+      
+  }
+  else if (score == 3) {
+      cout << "Good try!";
+  }
+  else {
+      cout << "Better luck next time!";
+      
+  }
   return 0;
 }
