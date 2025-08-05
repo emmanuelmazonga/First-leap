@@ -53,5 +53,9 @@ int main() {
     }
 
   cout<<"YOUR FINAL SCORE IS "<<score<<endl;
+
+  if (score == 3) cout << "Excellent!";
+else if (score == 2) cout << "Good try!";
+else cout << "Better luck next time!";
   return 0;
 }
